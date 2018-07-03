@@ -16,9 +16,9 @@ attr_accessor :word
   def match(word_array)
 
     new_array = []
-    new_word = @word.split
+    new_word = @word.split("")
     word_array.each do |word|
-      if word.split.sort == new_word.sort
+      if word.split("").sort == new_word.sort
         new_array << word
 
       end
