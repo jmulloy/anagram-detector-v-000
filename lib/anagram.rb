@@ -9,9 +9,9 @@ attr_accessor :word
     @word = word
   end
 
-  def self.all
-    @@all
-  end
+  #def self.all
+  #  @@all
+  #end
 
   def match(word_array) 
 
