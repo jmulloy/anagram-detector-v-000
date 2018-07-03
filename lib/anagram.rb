@@ -16,8 +16,15 @@ attr_accessor :word
 
   def match(word_array) 
     binding.pry
+    new_array = []
     new_word = @word.split
-    # @word.chars.sort.join 
+    word_array.each do |word|
+      if word.split.sort == new_word.sort
+        new_array << word
+
+      end
+    end
+    new_array# @word.chars.sort.join 
 
     #word_array.select {|word| word.chars.sort.join == @word} 
   end
