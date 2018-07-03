@@ -1,4 +1,5 @@
 # Your code goes here!
+require "pry"
 class Anagram
 
 attr_accessor :word
@@ -14,7 +15,8 @@ attr_accessor :word
   end
 
   def match(word_array) 
-    @word = @word.chars.sort.join 
+    @word.chars.sort.join 
+    binding.pry
     word_array.select {|word| word.chars.sort.join == @word} 
   end
 end
