@@ -23,7 +23,8 @@ attr_accessor :word
 
       end
     end
-    new_array# @word.chars.sort.join 
+    new_array
+    # @word.chars.sort.join 
 
     #word_array.select {|word| word.chars.sort.join == @word} 
   end
