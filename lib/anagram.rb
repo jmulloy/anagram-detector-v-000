@@ -13,7 +13,7 @@ attr_accessor :word
   #  @@all
   #end
 
-  def match(word_array) 
+  def match(word_array)
 
     new_array = []
     new_word = @word.split
