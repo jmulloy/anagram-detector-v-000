@@ -1,5 +1,4 @@
 # Your code goes here!
-require "pry"
 class Anagram
 
 attr_accessor :word
@@ -15,7 +14,7 @@ attr_accessor :word
   end
 
   def match(word_array) 
-    
+
     new_array = []
     new_word = @word.split
     word_array.each do |word|
