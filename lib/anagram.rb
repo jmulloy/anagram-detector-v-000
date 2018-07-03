@@ -15,7 +15,7 @@ attr_accessor :word
   end
 
   def match(word_array) 
-    binding.pry
+    
     new_array = []
     new_word = @word.split
     word_array.each do |word|
