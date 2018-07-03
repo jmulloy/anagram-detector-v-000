@@ -15,8 +15,9 @@ attr_accessor :word
   end
 
   def match(word_array) 
-    @word.chars.sort.join 
     binding.pry
+    @word.chars.sort.join 
+
     #word_array.select {|word| word.chars.sort.join == @word} 
   end
 end
